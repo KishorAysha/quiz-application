@@ -25,7 +25,9 @@ export default function Signup() {
             icon="lock_clock"
           />
           <CheckBox text="I agree to the Term &amp; Conditions" />
-          <Button>Submit now</Button>
+          <Button>
+            <span>Submit now</span>
+          </Button>
 
           <div className="info">
             Already have an account? <a href="login.html">Login</a> instead.
