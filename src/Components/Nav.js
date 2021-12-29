@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import logo from "../assets/images/logo-bg.png";
 import classes from "../styles/Nav.module.css";
 import Account from "./Account.js";
@@ -7,10 +8,10 @@ export default function Nav() {
     <nav className={classes.nav}>
       <ul>
         <li>
-          <a href="index.html" className={classes.brand}>
+          <NavLink to="/" className={classes.brand}>
             <img src={logo} alt="Learn with Sumit Logo" />
             <h3>Learn with Sumit</h3>
-          </a>
+          </NavLink>
         </li>
       </ul>
       <Account />

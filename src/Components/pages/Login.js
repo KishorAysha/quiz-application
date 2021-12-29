@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import classes from "../../styles/Login.module.css";
 import Button from "../Button";
 import Illustration from "../Illustration";
@@ -22,7 +23,8 @@ export default function Login() {
           </Button>
 
           <div className="info">
-            Don't have an account? <a href="signup.html">Signup</a> instead.
+            Don't have an account? <NavLink to="/signup">Signup</NavLink>{" "}
+            instead.
           </div>
         </form>
       </div>

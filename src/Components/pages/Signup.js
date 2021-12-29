@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import classes from "../../styles/Signup.module.css";
 import Button from "../Button";
 import CheckBox from "../CheckBox";
@@ -30,7 +31,8 @@ export default function Signup() {
           </Button>
 
           <div className="info">
-            Already have an account? <a href="login.html">Login</a> instead.
+            Already have an account? <NavLink to="/login">Login</NavLink>{" "}
+            instead.
           </div>
         </Form>
       </div>
