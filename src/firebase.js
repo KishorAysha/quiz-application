@@ -1,4 +1,5 @@
 import { initializeApp } from "firebase/app";
+import { getDatabase } from "firebase/database";
 
 //firebase configuration
 // const app = initializeApp({
@@ -13,11 +14,13 @@ import { initializeApp } from "firebase/app";
 const firebaseConfig = {
   apiKey: "AIzaSyDrn1UITrnc2oVvCeH79rGQo2OElgmHmcw",
   authDomain: "react-quiz-dev-8a325.firebaseapp.com",
+  databaseURL:
+    "https://react-quiz-dev-8a325-default-rtdb.asia-southeast1.firebasedatabase.app",
   projectId: "react-quiz-dev-8a325",
   storageBucket: "react-quiz-dev-8a325.appspot.com",
   messagingSenderId: "1059023280212",
   appId: "1:1059023280212:web:64cda7b600b571e484f5c1",
 };
-const app = initializeApp(firebaseConfig);
-
+const app1 = initializeApp(firebaseConfig);
+const app = getDatabase(app1);
 export default app;
